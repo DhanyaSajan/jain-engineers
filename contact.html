@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Jain Engineers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <div class="logo-image">J</div>
+        <div class="logo">
+          <div class="logo-text-main">Jain Engineers</div>
+          <div class="logo-text-sub">Electrical Design & Consultancy</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Get In Touch</h1>
+      <p>We'd love to hear from you. Contact us today for a consultation.</p>
+    </section>
+
+    <!-- Contact Information -->
+    <section>
+      <h2>Contact Information</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Address</h3>
+          <p>Aluva, Ernakulam<br>Kerala, India</p>
+          <p style="color: #666; font-size: 0.95rem;">Serving clients across Kerala for over 40 years</p>
+        </div>
+        <div class="card">
+          <h3>Phone</h3>
+          <p style="font-size: 1.1rem;">+91 (XXX) XXX-XXXX</p>
+          <p style="color: #666; font-size: 0.95rem;">Available Monday-Friday, 9 AM - 6 PM IST</p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:info@jainengineers.com">info@jainengineers.com</a></p>
+          <p style="color: #666; font-size: 0.95rem;">We respond within 24 hours</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section>
+      <h2>Send us a Message</h2>
+      <p style="text-align: center; margin-bottom: var(--spacing-xl); font-size: 1.05rem;">Fill out the form below and we'll get back to you shortly.</p>
+      
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 (XXX) XXX-XXXX">
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company/Organization</label>
+          <input type="text" id="company" name="company" placeholder="Your company name">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">Project Type</label>
+          <select id="project-type" name="project-type" style="width: 100%; padding: var(--spacing-sm); border: 1px solid var(--border-grey); border-radius: 4px; font-family: var(--font-body); font-size: 1rem;">
+            <option value="">Select a project type</option>
+            <option value="residential">Residential</option>
+            <option value="commercial">Commercial</option>
+            <option value="industrial">Industrial</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required placeholder="Tell us about your project and requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <div id="form-message" style="text-align: center; margin-top: var(--spacing-lg); display: none; padding: var(--spacing-lg); border-radius: 4px; background-color: #D4EDDA; color: #155724; border: 1px solid #C3E6CB;">
+        Thank you for your message! We'll get back to you shortly.
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section>
+      <h2>Find Us On The Map</h2>
+      <div style="width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); margin-top: var(--spacing-lg);">
+        <iframe 
+          width="100%" 
+          height="450" 
+          style="border:none;" 
+          loading="lazy" 
+          allowfullscreen="" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4419848394533!2d76.30166487346298!3d10.125463257891508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d4d4d4d4d4d%3A0x4d4d4d4d4d4d4d4d!2sAluva%2C%20Ernakulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1234567890123">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <div style="display: grid; gap: var(--spacing-lg); margin-top: var(--spacing-xl);">
+        <div style="background-color: var(--white); padding: var(--spacing-lg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3 style="margin-top: 0; cursor: pointer;" onclick="toggleFAQ(this)">How quickly can you respond to project inquiries?</h3>
+          <p style="margin: var(--spacing-md) 0 0 0; display: none;" class="faq-answer">We typically respond to all inquiries within 24 hours. For urgent matters, we can often provide initial consultation within the same business day.</p>
+        </div>
+
+        <div style="background-color: var(--white); padding: var(--spacing-lg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3 style="margin-top: 0; cursor: pointer;" onclick="toggleFAQ(this)">Do you offer site visits for project assessment?</h3>
+          <p style="margin: var(--spacing-md) 0 0 0; display: none;" class="faq-answer">Yes, we conduct comprehensive site visits and assessments for projects. These visits help us understand your specific requirements and provide accurate recommendations and quotations.</p>
+        </div>
+
+        <div style="background-color: var(--white); padding: var(--spacing-lg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3 style="margin-top: 0; cursor: pointer;" onclick="toggleFAQ(this)">What areas do you serve?</h3>
+          <p style="margin: var(--spacing-md) 0 0 0; display: none;" class="faq-answer">We serve clients across Kerala with our base in Aluva, Ernakulam. We have extensive experience with projects in residential, commercial, and industrial sectors throughout the state.</p>
+        </div>
+
+        <div style="background-color: var(--white); padding: var(--spacing-lg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3 style="margin-top: 0; cursor: pointer;" onclick="toggleFAQ(this)">Can you provide references from past clients?</h3>
+          <p style="margin: var(--spacing-md) 0 0 0; display: none;" class="faq-answer">Absolutely! We're proud of our track record and are happy to provide references from satisfied clients in your industry. Please ask during your consultation.</p>
+        </div>
+
+        <div style="background-color: var(--white); padding: var(--spacing-lg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3 style="margin-top: 0; cursor: pointer;" onclick="toggleFAQ(this)">How do you ensure project timelines are met?</h3>
+          <p style="margin: var(--spacing-md) 0 0 0; display: none;" class="faq-answer">We maintain rigorous project management practices with clear milestones, regular progress updates, and proactive problem-solving. Our 40+ years of experience ensures we deliver on schedule consistently.</p>
+        </div>
+
+        <div style="background-color: var(--white); padding: var(--spacing-lg); border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3 style="margin-top: 0; cursor: pointer;" onclick="toggleFAQ(this)">What's your approach to cost optimization?</h3>
+          <p style="margin: var(--spacing-md) 0 0 0; display: none;" class="faq-answer">We design solutions that balance quality, safety, and cost-efficiency. Through our experience, we identify optimal component selections, efficient layouts, and smart design choices that reduce costs without compromising performance or safety.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section style="text-align: center; background-color: var(--light-grey); padding: var(--spacing-xl); border-radius: 8px; margin: var(--spacing-xl) 0;">
+      <h2>Why Work With Jain Engineers?</h2>
+      <div class="features-list" style="margin-top: var(--spacing-xl);">
+        <div class="feature-item" style="border-left: none; border-top: 4px solid var(--accent-blue);">
+          <h4 style="margin-top: 0;">40+ Years Experience</h4>
+          <p style="margin: 0;">Decades of proven expertise and client satisfaction</p>
+        </div>
+        <div class="feature-item" style="border-left: none; border-top: 4px solid var(--accent-blue);">
+          <h4 style="margin-top: 0;">Expert Team</h4>
+          <p style="margin: 0;">Certified professionals with deep technical knowledge</p>
+        </div>
+        <div class="feature-item" style="border-left: none; border-top: 4px solid var(--accent-blue);">
+          <h4 style="margin-top: 0;">Safety First</h4>
+          <p style="margin: 0;">Unwavering commitment to safety standards and compliance</p>
+        </div>
+        <div class="feature-item" style="border-left: none; border-top: 4px solid var(--accent-blue);">
+          <h4 style="margin-top: 0;">Quality Assured</h4>
+          <p style="margin: 0;">Premium solutions with rigorous quality checks</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Jain Engineers</h3>
+          <p>Your trusted partner in electrical design and consultancy for over 40 years.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="projects.html">Projects</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Location</h3>
+          <p>Aluva, Ernakulam<br>Kerala, India</p>
+        </div>
+      </div>
+      <div class="footer-divider">
+        <p>© 2026 Jain Engineers. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        element.style.color = 'var(--accent-blue)';
+      } else {
+        answer.style.display = 'none';
+        element.style.color = 'var(--text-dark)';
+      }
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      
+      // Collect form data
+      const formData = new FormData(event.target);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        company: formData.get('company'),
+        subject: formData.get('subject'),
+        projectType: formData.get('project-type'),
+        message: formData.get('message'),
+        timestamp: new Date().toISOString()
+      };
+
+      // Log to console (in production, send to backend or email service)
+      console.log('Contact Form Submission:', data);
+
+      // Show success message
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.style.display = 'block';
+      
+      // Reset form
+      event.target.reset();
+
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
